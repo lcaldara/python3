@@ -1,0 +1,12 @@
+num = int(input('Digite o num da seq Fibonacci: '))
+c = 3
+t1 = 0
+t2 = 1
+t3 = 0
+print(t1, t2, end=' ')
+while c <= num:
+    t3 = t1 + t2
+    print(t3, end=' ')
+    t1 = t2
+    t2 = t3
+    c = c + 1

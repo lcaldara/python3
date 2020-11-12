@@ -1,0 +1,13 @@
+n = int(input('Digite um número para a tabuada: '))
+print('='*15)
+print('''{} x  1 = {:3}
+{} x  2 = {:3}
+{} x  3 = {:3}
+{} x  4 = {:3}
+{} x  5 = {:3}
+{} x  6 = {:3}
+{} x  7 = {:3}
+{} x  8 = {:3}
+{} x  9 = {:3}
+{} x 10 = {:3}'''.format(n, n*1, n, n*2, n, n*3, n, n*4, n, n*5, n, n*6, n, n*7, n, n*8, n, n*9, n, n*10))
+print('='*15)
