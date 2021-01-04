@@ -3,10 +3,10 @@ import pandas as pd
 inicio = int(input('Qual a primeira referência? '))
 fim = int(input('Qual a última referencia? '))
 
-produto1 = pd.read_excel("C:/Users/Leandro/PyCharm/Python/Projeto SAPE/PRODUTO1.xlsx", sep=';')
-produto2 = pd.read_excel("C:/Users/Leandro/PyCharm/Python/Projeto SAPE/PRODUTO2.xlsx", sep=';')
-produto3 = pd.read_excel("C:/Users/Leandro/PyCharm/Python/Projeto SAPE/PRODUTO3.xlsx", sep=';')
-produto4 = pd.read_excel("C:/Users/Leandro/PyCharm/Python/Projeto SAPE/PRODUTO4.xlsx", sep=';')
+produto1 = pd.read_excel("C:/Users/Leandro/PyCharm/Python/Relatório de Estoque/PRODUTO1.xlsx", sep=';')
+produto2 = pd.read_excel("C:/Users/Leandro/PyCharm/Python/Relatório de Estoque/PRODUTO2.xlsx", sep=';')
+produto3 = pd.read_excel("C:/Users/Leandro/PyCharm/Python/Relatório de Estoque/PRODUTO3.xlsx", sep=';')
+produto4 = pd.read_excel("C:/Users/Leandro/PyCharm/Python/Relatório de Estoque/PRODUTO4.xlsx", sep=';')
 
 produto1 = pd.DataFrame(produto1[['COD_EST', 'DESCRICAO', 'VALOR_VEND', 'ULT_CUSTO', 'SALDO_ATU']].rename(columns={'COD_EST': 'Codigo', 'DESCRICAO': 'Descrição', 'VALOR_VEND': 'Venda', 'ULT_CUSTO': 'Custo', 'SALDO_ATU': 'L4'}))
 produto1 = produto1.sort_values(by='Codigo', ignore_index=True)
